@@ -1,0 +1,303 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*header begin */
+
+.header{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/slide01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+.header h4{
+    font-size: 16px;
+    float: left;
+    position: relative;
+    top: 15px;
+    margin: 0px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.header span{
+    font-weight: 200;
+}
+
+.header a{
+    float: right;
+    font-size: 16px;
+    position: relative;
+    top: 15px;
+    text-decoration: none;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.banner-cont{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+.banner-cont p{
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.banner-cont span{
+    font-weight: 300;
+}
+
+.banner-cont hr{
+    width: 35%;
+}
+
+.banner-cont h1{
+    font-size: 102px;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+/*  two-section begins */
+
+.full-width{
+    width: 100%;
+    padding: 80px 0;
+    background-color: #f2f2f2;
+}
+
+.fixed-width{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.two-section .left{
+    width: 45%;
+    float: left;
+    background-color: #fff;
+}
+
+.two-section img{
+    width: 100%;
+}
+
+.two-section h6{
+    color: grey;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 200;
+}
+
+.two-section hr{
+    width: 40%;
+    color: grey;
+    height: 0.5px;
+
+}
+
+.two-section h4{
+    color: #000;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.two-section p{
+    text-align: left;
+    color: grey;
+    font-size: 14px;
+    padding: 0 30px;
+    line-height: 22px;
+}
+
+.two-section button{
+    width: 100px;
+    height: 40px;
+    border: 1px solid grey;
+    background: none;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px 0;
+}
+
+.two-section .right{
+    width: 45%;
+    float: right;
+    background-color: #fff;
+}
+
+/* third-section begins  */
+
+.third-section{
+    width: 100%;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center ;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+.third-section p, .four-section p{
+    font-weight: 100;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin:0;
+    padding-top:100px
+   
+}
+
+.third-section hr, .four-section hr{
+    width: 40%;    
+}
+
+.third-section h4, .four-section h4{
+    font-weight: 200;
+    font-size: 26px;
+    padding-bottom: 70px;
+    padding-top: 10px;
+    margin: 0;
+}
+
+/*four-section begins  */
+
+.four-section{
+    color: grey;
+    text-align: center;
+}
+
+.four-section p{
+    padding-top: 0;
+}
+
+.four-section .fixed-width img{
+    width: 45%;
+    border: 10px solid #fff;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    float: left;
+
+}
+
+.four-section .fixed-width .right{
+    margin-right: 0;
+}
+
+/* footer begins */
+
+.footer{
+    width: 100%;
+    background-color: #000;
+    padding: 50px 0;
+    text-align: center;
+    color: grey;
+    
+}
+
+.footer a{
+    font-size: 22px;
+    padding: 5px;
+    text-decoration: none;
+    color: grey;
+}
+
+.footer p{
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 25px;
+}
+
+
+                /* media querry starts here  */
+
+    /* for laptop size */
+
+@media  only screen  and (max-width:1024px){
+    .banner-cont{
+        top: 25%;
+    }
+    
+    .banner-cont p{
+        font-size: 16px;
+    }
+       
+    .banner-cont h1{
+        font-size: 80px;
+    }
+}
+ 
+      /* for tablet size  */
+
+@media  only screen  and (max-width:800px){
+    .four-section .fixed-width img{
+        width: 50%;
+        margin-right: 0;
+        float: none;
+    }
+
+}
+
+
+
+
+@media  only screen  and (max-width:426px){
+
+    /* header section */
+
+    .banner-cont{
+        width: 60%;
+        top: 20%;
+    }
+    
+    .banner-cont p{
+        font-size: 14px;
+    }
+    
+    .banner-cont h1{
+        font-size: 52px;
+    }
+
+    /* two section*/
+    .two-section .left{
+        width: 100%;
+        margin: 20px 0px;
+        
+    }
+
+    .two-section .right{
+        width: 100%;
+        
+    }
+
+     /* four section */
+
+    .four-section .fixed-width img{
+        width: 70%;  
+    }
+
+
+}
+
